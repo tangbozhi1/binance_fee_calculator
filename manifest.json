@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "币安合约计算器手续费插件",
+    "version": "1.0",
+    "description": "在币安合约计算器中自动扣除交易手续费",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.binance.com/*/calculator"],
+        "js": ["content.js"]
+      }
+    ]
+  }
